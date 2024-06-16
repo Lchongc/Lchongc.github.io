@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .header{
+            background-color: aqua;
+        }
+        .header .container{
+            background-color: beige;
+            height: 100px;
+        }
+        .left{
+            background-color: blue;
+            width: 400px;
+            height: 700px;
+            margin-bottom: 10px;
+            float: left;
+        }
+        .right{
+            background-color: burlywood;
+            width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
+            float: right;
+        }
+        .footer{
+            background-color: brown;
+            height: 80px;
+            margin-top: 10px;
+            clear: both;
+        }
+        .header>.container{
+            background-color: black;
+            height: 80px;
+        }
+        .footer>.container{
+            background-color: chartreuse;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div  class="container"></div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+    </div>
+    <div class="footer">
+        <div class="container"></div>
+    </div>
+</body>
+</html>
