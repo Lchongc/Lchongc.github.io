@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户注册简历表单</title>
+    <style>
+        .form-container {
+            border: 2px solid #333;
+            padding: 20px;
+            width: 25%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="/submit_resume_info" method="post" enctype="multipart/form-data">
+            <label for="nickname">昵称：</label><br>
+            <input type="text" id="nickname" name="nickname"><br><br>
+
+            <label for="password">密码：</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="email">邮箱：</label><br>
+            <input type="text" id="email" name="email">
+            <select name="email_suffix">
+                <option value="@qq.com">@qq.com</option>
+                <option value="@gmail.com">@163.com</option>
+                <option value="@hotmail.com">@abc.com</option>
+            </select><br><br>
+
+            <label for="hobbies">爱好：</label><br>
+            <input type="checkbox" id="hobby_travel" name="hobbies" value="旅游">
+            <label for="hobby_travel">旅游</label>
+            <input type="checkbox" id="hobby_sports" name="hobbies" value="运动">
+            <label for="hobby_sports">运动</label>
+            <input type="checkbox" id="hobby_photography" name="hobbies" value="摄影">
+            <label for="hobby_photography">摄影</label><br><br>
+
+            <label for="bio">个人简介：</label><br>
+            <textarea id="bio" name="bio"></textarea><br><br>
+
+            <label for="photo">上传照片：</label><br>
+            <input type="file" id="photo" name="photo"><br><br>
+
+            <input type="submit" value="提交">
+        </form>
+    </div>
+    <br>
+    <a href="index.html">返回首页</a>
+</body>
+</html>
